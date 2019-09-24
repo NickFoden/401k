@@ -21,6 +21,10 @@ const LandingPage = props => {
     const { salary, percent } = state;
     return Math.floor((salary * percent) / 100 / 26);
   };
+  const renderMatch = () => {
+    const { salary, percent } = state;
+    return Math.floor((salary * percent) / 100);
+  };
   return (
     <div className="page_container">
       <header className="header_landing">
@@ -48,6 +52,9 @@ const LandingPage = props => {
           </label>
           <h4>
             Check Contribution: <span className="total">${renderTotal()}</span>
+          </h4>
+          <h4>
+            Match: <span>${renderMatch()}</span>
           </h4>
         </form>
       </section>
