@@ -1,0 +1,36 @@
+@import "../styles/mixins.scss";
+
+.header_landing {
+  background-color: white;
+  font-family: $font-lit;
+  width: 100vw;
+  text-align: center;
+  h1 {
+    background-color: white;
+    padding-bottom: 15px;
+  }
+}
+
+.page_container {
+  background-color: $color-dark-gray;
+  height: 100vh;
+}
+
+.landing_page_form {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-mont;
+  margin: 0 auto;
+  text-align: left;
+  width: 250px;
+  label {
+    color: $color-white;
+    padding-bottom: 25px;
+  }
+  input {
+    margin-left: 15px;
+  }
+  h4 {
+    color: $color-white;
+  }
+}
