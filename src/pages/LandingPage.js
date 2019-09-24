@@ -4,8 +4,8 @@ import "./pageStyles.scss";
 const LandingPage = props => {
   const [state, updateState] = useState({
     goal: 0,
-    percent: 3,
-    salary: 75000,
+    percent: 4,
+    salary: 60000,
     today: Date.now(),
     year: new Date().getFullYear()
   });
@@ -46,9 +46,15 @@ const LandingPage = props => {
               onChange={handleChange}
             ></input>
           </label>
-          <h4>Check Contribution: ${renderTotal()}</h4>
+          <h4>
+            Check Contribution: <span className="total">${renderTotal()}</span>
+          </h4>
         </form>
       </section>
+      <footer>
+        To reach the % match at your company, how much do you need to put aside
+        per check based on 26 checks in a year?
+      </footer>
     </div>
   );
 };

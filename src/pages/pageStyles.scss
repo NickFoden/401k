@@ -13,13 +13,14 @@
 
 .page_container {
   background-color: $color-dark-gray;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .landing_page_form {
   display: flex;
   flex-direction: column;
   font-family: $font-mont;
+  font-size: 20px;
   margin: 0 auto;
   text-align: left;
   width: 250px;
@@ -28,9 +29,28 @@
     padding-bottom: 25px;
   }
   input {
+    font-size: 18px;
     margin-left: 15px;
+    margin-top: 10px;
+    width: 100%;
   }
   h4 {
     color: $color-white;
+    font-size: 18px;
+    .total {
+      color: goldenrod;
+    }
   }
+}
+
+footer {
+  color: $color-white;
+  font-family: $font-lit;
+  font-size: 20px;
+  line-height: 2;
+  margin: 100px auto;
+  padding: 0 25px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
 }
